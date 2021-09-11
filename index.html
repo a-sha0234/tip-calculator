@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="/app/scss/style.css" />
+  </head>
+  <body>
+    <section><h1>SPLITER</h1></section>
+    <div class="container">
+      <section class="left-side">
+        <p class="heading">Bill</p>
+        <input type="text" id="input_right" /><br /><br />
+        <!--  -->
+        <p class="heading">Select Tip %</p>
+        <!--  -->
+        <button type="button" id="5">5%</button>
+        <button type="button" id="10">10%</button>
+        <button type="button" id="15">15%</button>
+        <button type="button" id="20">25%</button>
+        <button type="button" id="50">50%</button>
+        <button type="button" id="custom">Custom</button>
+
+        <!--  -->
+        <p class="heading">Number of People</p>
+        <input type="text" id="input_right" /><br /><br />
+      </section>
+      <!--  -->
+
+      <section class="right-side">
+        <p>Tip Amount / person</p>
+        <!--  -->
+        <p>Total / person</p>
+        <!--  -->
+        <button type="button" id="reset">Reset</button>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="app/js/script.js"></script>
+  </body>
+</html>

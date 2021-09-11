@@ -1,0 +1,51 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #c5e4e7;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  width: 700px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  top: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 366px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.container .left-side {
+  width: 50%;
+}
+
+.container .right-side {
+  width: 50%;
+}
+
+.heading {
+  position: relative;
+  left: 35px;
+}
+
+.input_right {
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

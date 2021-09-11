@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $Lightgrayishcyan1;
+  padding: 0; //css reset
+  margin: 0;
+}
+
+.container {
+  background-color: $White;
+
+  width: 700px;
+  position: relative;
+  margin-right: auto; //centers the container
+  margin-left: auto;
+  top: 190px;
+  display: flex;
+  height: 366px;
+  overflow: hidden;
+  border-radius: 20px;
+
+  .left-side {
+    width: 50%;
+  }
+
+  .right-side {
+    width: 50%;
+  }
+}
+
+.heading {
+  position: relative;
+  left: 35px;
+}
+
+.input_right {
+  position: relative;
+}
