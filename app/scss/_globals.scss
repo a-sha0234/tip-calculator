@@ -38,10 +38,21 @@ body {
 }
 
 .heading {
-  position: relative;
-  left: 35px;
+  @include position;
 }
 
 .input_right {
   position: relative;
+}
+
+.btn {
+  @include position;
+}
+
+.input_right {
+  @include position;
+  height: 33px;
+  width: 286px;
+  background-color: $Lightgrayishcyan2;
+  border-radius: 5px;
 }
