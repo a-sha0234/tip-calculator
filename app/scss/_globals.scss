@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -39,6 +41,7 @@ body {
 
 .heading {
   @include position;
+  font-family: "Space Mono", monospace;
 }
 
 .input_right {
@@ -47,6 +50,28 @@ body {
 
 .btn {
   @include position;
+  border-radius: 5px;
+  height: 35px;
+  width: 90px;
+  border: none;
+  background-color: $Verydarkcyan;
+  color: $White;
+  font-family: "Space Mono", monospace;
+}
+
+.btn:hover {
+  background-color: $Lightgrayishcyan1;
+  color: $Darkgrayishcyan1;
+}
+
+.sep {
+  background-color: $Strongcyan;
+  color: black;
+}
+
+.custom {
+  background-color: $Lightgrayishcyan2;
+  color: $Verydarkcyan;
 }
 
 .input_right {
@@ -54,5 +79,8 @@ body {
   height: 33px;
   width: 286px;
   background-color: $Lightgrayishcyan2;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  border: none;
 }

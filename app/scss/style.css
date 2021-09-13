@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -43,6 +44,7 @@ body {
 .heading {
   position: relative;
   left: 30px;
+  font-family: "Space Mono", monospace;
 }
 
 .input_right {
@@ -52,6 +54,28 @@ body {
 .btn {
   position: relative;
   left: 30px;
+  border-radius: 5px;
+  height: 35px;
+  width: 90px;
+  border: none;
+  background-color: #00494d;
+  color: white;
+  font-family: "Space Mono", monospace;
+}
+
+.btn:hover {
+  background-color: #c5e4e7;
+  color: #5e7a7d;
+}
+
+.sep {
+  background-color: #26c0ab;
+  color: black;
+}
+
+.custom {
+  background-color: #f4fafa;
+  color: #00494d;
 }
 
 .input_right {
@@ -60,6 +84,9 @@ body {
   height: 33px;
   width: 286px;
   background-color: #f4fafa;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
