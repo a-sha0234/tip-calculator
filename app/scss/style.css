@@ -61,6 +61,7 @@ body {
   background-color: #00494d;
   color: white;
   font-family: "Space Mono", monospace;
+  font-size: 0.93rem;
 }
 
 .btn:hover {
@@ -85,8 +86,47 @@ body {
   width: 286px;
   background-color: #f4fafa;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Space Mono", monospace;
   border: none;
+}
+
+.right-side {
+  background-color: #00494d;
+  height: 317px;
+  width: 317px;
+  position: relative;
+  top: 30px;
+  right: 20px;
+  border-radius: 10px;
+}
+
+.right-side p {
+  position: relative;
+  left: 30px;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  top: 50px;
+  line-height: 60px;
+}
+
+#reset {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #26c0ab;
+  border: none;
+  font-size: 0.93rem;
+  font-weight: bold;
+}
+
+#reset:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
 }
 /*# sourceMappingURL=style.css.map */
