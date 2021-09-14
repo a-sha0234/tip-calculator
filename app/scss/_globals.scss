@@ -19,14 +19,12 @@ body {
 
 .container {
   background-color: $White;
-
-  width: 700px;
+  @include wheight(700px, 366px);
   position: relative;
   margin-right: auto; //centers the container
   margin-left: auto;
   top: 190px;
   display: flex;
-  height: 366px;
   overflow: hidden;
   border-radius: 20px;
 
@@ -53,13 +51,13 @@ body {
 .btn {
   @include position;
   border-radius: 5px;
-  height: 35px;
-  width: 90px;
+  @include wheight(90px, 35px);
+
   border: none;
   background-color: $Verydarkcyan;
   color: $White;
   font-family: $font-family;
-  font-size: 0.93rem;
+  font-size: $font-size-small;
 }
 
 .btn:hover {
@@ -79,11 +77,10 @@ body {
 
 .input_right {
   @include position;
-  height: 33px;
-  width: 286px;
+  @include wheight(286px, 33px);
   background-color: $Lightgrayishcyan2;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: $font-size-large;
   font-family: $font-family;
   border: none;
 }
@@ -91,8 +88,7 @@ body {
 
 .right-side {
   background-color: $Verydarkcyan;
-  height: 317px;
-  width: 317px;
+  @include wheight(317px, 317px);
   position: relative;
   top: 30px;
   right: 20px;
@@ -102,7 +98,7 @@ body {
     @include position;
     color: $White;
     font-family: $font-family;
-    font-size: 0.8rem;
+    font-size: 0.87rem;
     top: 50px;
     line-height: 60px;
   }
@@ -118,7 +114,7 @@ body {
   cursor: pointer;
   background-color: $Strongcyan;
   border: none;
-  font-size: 0.93rem;
+  font-size: $font-size-small;
   font-weight: bold;
 }
 
@@ -130,7 +126,7 @@ body {
 .tip_amount_per_person {
   position: relative;
   bottom: 105px;
-  font-size: 30px;
+  font-size: $font-size-largest;
   left: 200px;
   color: $Strongcyan;
   font-family: $font-family;
@@ -139,7 +135,7 @@ body {
 .total_amount_per_person {
   position: relative;
   bottom: 100px;
-  font-size: 30px;
+  font-size: $font-size-largest;
   left: 200px;
   color: $Strongcyan;
   font-family: $font-family;

@@ -2,3 +2,8 @@
   position: relative;
   left: 30px;
 }
+
+@mixin wheight($width, $height) {
+  width: $width;
+  height: $height;
+}
