@@ -82,7 +82,7 @@ body {
   border-radius: 10px;
   font-size: $font-size-large;
   font-family: $font-family;
-  border: none;
+  border: $border;
 }
 //end of left-side of container
 
@@ -113,7 +113,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   background-color: $Strongcyan;
-  border: none;
+  border: $border;
   font-size: $font-size-small;
   font-weight: bold;
 }
