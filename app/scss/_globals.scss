@@ -108,7 +108,7 @@ body {
   }
 }
 
-#reset {
+.reset {
   position: absolute;
   top: 80%; //center the button to in parent
   left: 10%;
@@ -122,7 +122,7 @@ body {
   font-weight: bold;
 }
 
-#reset:hover {
+.reset:hover {
   background-color: $Lightgrayishcyan1;
   color: $Verydarkcyan;
 }

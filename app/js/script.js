@@ -6,6 +6,7 @@ const sel_no_people = document.querySelector(".people");
 const btn = document.querySelectorAll(".btn");
 const tip_perPerson = document.querySelector(".tip_amount_per_person");
 const total_Amount = document.querySelector(".total_amount_per_person");
+const reset = document.querySelector(".reset");
 
 //globals
 
@@ -20,16 +21,28 @@ btn.forEach(function (btn) {
       total_Amount.textContent = "£" + totalAmount(5);
     } else if (tip.contains("ten")) {
       tip_perPerson.textContent = "£" + calculate(10);
+      total_Amount.textContent = "£" + totalAmount(10);
     } else if (tip.contains("sep")) {
       tip_perPerson.textContent = "£" + calculate(15);
+      total_Amount.textContent = "£" + totalAmount(15);
     } else if (tip.contains("twentyfive")) {
       tip_perPerson.textContent = "£" + calculate(25);
+      total_Amount.textContent = "£" + totalAmount(25);
     } else if (tip.contains("fifty")) {
       tip_perPerson.textContent = "£" + calculate(50);
+      total_Amount.textContent = "£" + totalAmount(50);
     } else {
       tip_perPerson.textContent = "Invalid";
     }
   });
+});
+
+reset.addEventListener("click", function () {
+  //reset button
+  sel_bill.value = ""; //use value function as its a number
+  sel_no_people.value = "";
+  tip_perPerson.textContent = ""; // textcontent as its a string
+  total_Amount.textContent = "";
 });
 
 //functions
@@ -38,7 +51,7 @@ function calculate(tip) {
   //calculate tip per person
   const total_bill_before = sel_bill.value;
   const people = sel_no_people.value;
-  return ((tip / 100) * total_bill_before) / people;
+  return Math.round(((tip / 100) * total_bill_before) / people);
 }
 
 function totalAmount(val) {
@@ -47,5 +60,5 @@ function totalAmount(val) {
   const total_bill = sel_bill.value;
   const people = sel_no_people.value;
   const totalTip = (val / 100) * total_bill;
-  return (Number(total_bill) + Number(totalTip)) / people;
+  return Math.round((Number(total_bill) + Number(totalTip)) / people);
 }
