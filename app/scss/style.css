@@ -147,4 +147,11 @@ body {
   color: #26c0ab;
   font-family: "Space Mono", monospace;
 }
+
+h1 {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  position: relative;
+  top: 100px;
+}
 /*# sourceMappingURL=style.css.map */
