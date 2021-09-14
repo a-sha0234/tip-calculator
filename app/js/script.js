@@ -41,9 +41,11 @@ function calculate(tip) {
   return ((tip / 100) * total_bill_before) / people;
 }
 
-function totalAmount(tip) {
-  const total_bill_before = sel_bill.value;
+function totalAmount(val) {
+  //calculate total bill per person
+  // problem fixed: when adding the bill to the tip the values were concatinating, not sure why
+  const total_bill = sel_bill.value;
   const people = sel_no_people.value;
-  const totalTip = (tip / 100) * total_bill_before;
-  return (total_bill_before + totalTip) / people;
+  const totalTip = (val / 100) * total_bill;
+  return (Number(total_bill) + Number(totalTip)) / people;
 }
