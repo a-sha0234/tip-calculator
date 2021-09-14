@@ -15,20 +15,15 @@ btn.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const tip = e.currentTarget.classList;
     if (tip.contains("five")) {
-      tip_perPerson.textContent = "£" + calculate(5);
-      total_Amount.textContent = "£" + totalAmount(5);
+      calculate_amounts(5);
     } else if (tip.contains("ten")) {
-      tip_perPerson.textContent = "£" + calculate(10);
-      total_Amount.textContent = "£" + totalAmount(10);
+      calculate_amounts(10);
     } else if (tip.contains("sep")) {
-      tip_perPerson.textContent = "£" + calculate(15);
-      total_Amount.textContent = "£" + totalAmount(15);
+      calculate_amounts(15);
     } else if (tip.contains("twentyfive")) {
-      tip_perPerson.textContent = "£" + calculate(25);
-      total_Amount.textContent = "£" + totalAmount(25);
+      calculate_amounts(25);
     } else if (tip.contains("fifty")) {
-      tip_perPerson.textContent = "£" + calculate(50);
-      total_Amount.textContent = "£" + totalAmount(50);
+      calculate_amounts(50);
     } else {
       tip_perPerson.textContent = "Invalid";
     }
@@ -59,4 +54,10 @@ function totalAmount(val) {
   const people = sel_no_people.value;
   const totalTip = (val / 100) * total_bill;
   return ((Number(total_bill) + Number(totalTip)) / people).toFixed(2);
+}
+
+function calculate_amounts(val) {
+  //function to carry out calculations
+  tip_perPerson.textContent = "£" + calculate(val);
+  total_Amount.textContent = "£" + totalAmount(val);
 }
