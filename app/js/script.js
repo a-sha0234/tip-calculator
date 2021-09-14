@@ -8,8 +8,6 @@ const tip_perPerson = document.querySelector(".tip_amount_per_person");
 const total_Amount = document.querySelector(".total_amount_per_person");
 const reset = document.querySelector(".reset");
 
-//globals
-
 //event listners
 
 btn.forEach(function (btn) {
@@ -51,7 +49,7 @@ function calculate(tip) {
   //calculate tip per person
   const total_bill_before = sel_bill.value;
   const people = sel_no_people.value;
-  return Math.round(((tip / 100) * total_bill_before) / people);
+  return (((tip / 100) * total_bill_before) / people).toFixed(2); //round to 2 decimal places
 }
 
 function totalAmount(val) {
@@ -60,5 +58,5 @@ function totalAmount(val) {
   const total_bill = sel_bill.value;
   const people = sel_no_people.value;
   const totalTip = (val / 100) * total_bill;
-  return Math.round((Number(total_bill) + Number(totalTip)) / people);
+  return ((Number(total_bill) + Number(totalTip)) / people).toFixed(2);
 }
