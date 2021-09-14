@@ -58,6 +58,7 @@ function totalAmount(val) {
 
 function calculate_amounts(val) {
   //function to carry out calculations
+  //argument accpets tip amount
   tip_perPerson.textContent = "£" + calculate(val);
   total_Amount.textContent = "£" + totalAmount(val);
 }
