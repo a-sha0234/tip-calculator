@@ -98,7 +98,7 @@ body {
   right: 20px;
   border-radius: 10px;
 
-  p {
+  .headings_right {
     @include position;
     color: $White;
     font-family: "Space Mono", monospace;
@@ -126,3 +126,23 @@ body {
   background-color: $Lightgrayishcyan1;
   color: $Verydarkcyan;
 }
+
+.tip_amount_per_person {
+  position: relative;
+  bottom: 105px;
+  font-size: 30px;
+  left: 200px;
+  color: $Strongcyan;
+  font-family: "Space Mono", monospace;
+}
+
+.total_amount_per_person {
+  position: relative;
+  bottom: 100px;
+  font-size: 30px;
+  left: 200px;
+  color: $Strongcyan;
+  font-family: "Space Mono", monospace;
+}
+
+//end of right-side of container
